@@ -1,0 +1,14 @@
+name: github action demo pipline
+on:  
+   push :
+        branches :
+             main :
+jobs :
+  demo jobs :
+  runs_on : ubnutu-latest 
+
+steps: 
+- name : checkout code
+  uses : action/checkout v@2    
+- name : print message 
+  run :  echo "welcome to githubaction1"           
